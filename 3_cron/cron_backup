@@ -1,0 +1,1 @@
+0 23 * * 6 rsync -avz /home/user user@192.168.1.100:~/backup
