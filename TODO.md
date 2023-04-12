@@ -1,0 +1,5 @@
+- [] 1_sostituzione
+    - [] aggiungere makefile
+    - [] check 
+        - [] 📂 dir
+        - [] campi vuoti
