@@ -1,5 +1,7 @@
+- [] aggiungere makefile
+    - [] chmod
+
 - [] 1_sostituzione
-    - [] aggiungere makefile
     - [] check 
         - [] 📂 dir
         - [] campi vuoti
