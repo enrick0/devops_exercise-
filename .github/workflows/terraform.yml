@@ -24,11 +24,11 @@ jobs:
 
       - name: Terraform Format
         id: fmt
-        run: terraform fmt -check 4_aws
+        run: terraform fmt 4_aws
 
       - name: Terraform Init
         id: init
-        run: terraform init 4_aws
+        run: terraform -chdir=4_aws init
       
       - name: Terraform Validate
         id: validate
