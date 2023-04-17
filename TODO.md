@@ -5,3 +5,7 @@
     - [] check 
         - [] 📂 dir
         - [] campi vuoti
+
+- [] 4_aws
+    - [] HTTPS
+    - [] add ssh region key
