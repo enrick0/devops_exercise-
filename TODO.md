@@ -9,3 +9,4 @@
 - [] 4_aws
     - [] HTTPS
     - [] add ssh region key
+    - [] database cluster
