@@ -2,7 +2,7 @@
 resource "aws_db_subnet_group" "dbsubnetgroup" {
   name        = "rds-subnet-group"
   description = "Our main group of subnets"
-  subnet_ids  = ["${aws_subnet.private-a.id}", "${aws_subnet.private-b.id}"]
+  subnet_ids  = [aws_subnet.private-a.id, aws_subnet.private-b.id]
   tags = {
     Project = "wordpress"
   }
@@ -20,7 +20,7 @@ resource "aws_db_instance" "wpdb" {
   password               = "wpdbwpdb"
   multi_az               = "true"
   skip_final_snapshot    = "true"
-  vpc_security_group_ids = ["${aws_security_group.database.id}"]
+  vpc_security_group_ids = [aws_security_group.database.id]
   db_subnet_group_name   = aws_db_subnet_group.dbsubnetgroup.id
   tags = {
     Project = "wordpress"
