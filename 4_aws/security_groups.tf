@@ -50,16 +50,15 @@ resource "aws_security_group" "database" {
     from_port       = 22
     to_port         = 22
     protocol        = "tcp"
-    security_groups = ["${aws_security_group.website.id}"]
+    security_groups = [aws_security_group.website.id]
   }
 
   ingress {
     from_port       = 3306
     to_port         = 3306
     protocol        = "tcp"
-    security_groups = ["${aws_security_group.website.id}"]
+    security_groups = [aws_security_group.website.id]
   }
-
 
   egress {
     from_port   = 0
@@ -67,7 +66,6 @@ resource "aws_security_group" "database" {
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
   }
-
 }
 
 resource "aws_security_group" "efs" {
@@ -93,5 +91,4 @@ resource "aws_security_group" "efs" {
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
   }
-
 }
