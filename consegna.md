@@ -1,9 +1,9 @@
-## Excercise 1
+## Exercise 1
 Write a python or bash script that takes three parameters, two strings and a directory name, 
 and substitutes any occurrence of the first string with the second string for any file in the directory, recursively
 
 
-## Excercise 2
+## Exercise 2
 Write a python or bash script that counts the number of script files in a directory subdividing it by the shebang interpreter.
 
 An example output in macOS is:
@@ -16,11 +16,11 @@ countexec /usr/bin
 ...
 
 
-## Excercise 3
+## Exercise 3
 Write a cron string that **every sunday night** create a backup of /home/user folder and send it to a remote server which can be reached using ssh with user@192.168.1.100 (consider private and public key already correctly installed and configured)
 
 
-## Excercise 4
+## Exercise 4
 Quick! A new WordPress site must go live!
 You have these instructions: 
 - Automate the creation of the infrastructure and the setup of the application
