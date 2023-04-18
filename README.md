@@ -28,6 +28,20 @@ le componenti principali sono:
 - [x] CI/CD pipeline*
     - ho creato una pipeline per **terraform** al push sul master, non avendolo potuto fare per wordpress   
 
+## Terraform  
+### Prerequisiti
+_Il codice è Free Tier friendly_ 
+
+Accesso ad un **account AWS cloud**, aver **terraform-cli** installato e connesso ad un account **terraform** cone da questo [Link](https://developer.hashicorp.com/terraform/tutorials/automation/github-actions?in=terraform%2Fautomation)  
+
+### Terraform 
+Dopo aver inserito una "key_pair" EC2 nella regione dal nome "wordpress".
+
+si possono lanciare i seguiti comandi
+`cd es4`
+`terraform fmt`
+`terraform validate`
+`terraform apply`
 
 ## Test scalabilità (dentro istanza ec2)
 
